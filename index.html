@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue+WebApi</title>
+    <!-- Vue.js 3.3.8 -->
+    <script src="https://unpkg.com/vue@3.3.8/dist/vue.global.js"></script>
+    <!-- Application Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome 6.4.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Axios 1.6.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue+WebApi</h1>
+        <h2>Benvenuto, {{ user }}</h2>
+        <button @click="generaNumero">Genera numero</button>
+        <div v-if="userNumber">Numero estratto: {{ userNumber }}</div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

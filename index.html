@@ -24,6 +24,10 @@
         <button @click="generaNumero">Genera numero</button>
         <div v-if="userNumber">Numero estratto: {{ userNumber }}</div>
 
+        <ul>
+            <li v-for="email in emails">{{ email }}</li>
+        </ul>
+
     </div>
     <script src="app.js"></script>
 </body>
